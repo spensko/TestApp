@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Sound" customModuleProvider="target">
+            <connections>
+                <outlet property="splash" destination="RFN-8h-b1t" id="ywE-SD-JPL"/>
+                <outlet property="terms" destination="WmE-o7-0My" id="I5N-av-k1V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up as a creator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXe-wj-SjP">
+                    <rect key="frame" x="114.5" y="116" width="185" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="JzF-gl-hbD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" name="text"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please give us access to your TikTok account to get started" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zi-JD-skE">
+                    <rect key="frame" x="25" y="172" width="364" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="text"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fkU-NL-rYZ">
+                    <rect key="frame" x="131" y="237.5" width="152" height="64"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_tiktok" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-IN-vMx">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_square" translatesAutoresizingMaskIntoConstraints="NO" id="xJd-cP-acL">
+                            <rect key="frame" x="88" y="0.0" width="64" height="64"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7q-mi-jng">
+                    <rect key="frame" x="20" y="325.5" width="374" height="40"/>
+                    <color key="backgroundColor" name="primary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dh9-KR-fI4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Continue" image="ic_next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                            <color key="value" name="primary"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                            <color key="value" name="primary_tapped"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="disabledColor">
+                            <color key="value" name="background"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="connectAction:" destination="-1" eventType="touchUpInside" id="F3a-Qi-fLd"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be redirect to official TikTok website/mobile app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5h-88-B74">
+                    <rect key="frame" x="25" y="373.5" width="364" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" name="gray"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, you agree to our Terms of Use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmE-o7-0My">
+                    <rect key="frame" x="25" y="827.5" width="364" height="14.5"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" name="gray"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="MVn-OI-1TK" appends="YES" id="AmJ-jF-7Ud"/>
+                    </connections>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFN-8h-b1t">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-tq-gdr">
+                            <rect key="frame" x="170" y="396" width="74" height="104"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_square" translatesAutoresizingMaskIntoConstraints="NO" id="V6M-38-pmR">
+                                    <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_text" translatesAutoresizingMaskIntoConstraints="NO" id="Ayh-ix-NKH">
+                                    <rect key="frame" x="0.0" y="80" width="74" height="24"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="bg"/>
+                    <constraints>
+                        <constraint firstItem="gnn-tq-gdr" firstAttribute="centerX" secondItem="RFN-8h-b1t" secondAttribute="centerX" id="5LC-v6-Ecs"/>
+                        <constraint firstItem="gnn-tq-gdr" firstAttribute="centerY" secondItem="RFN-8h-b1t" secondAttribute="centerY" id="AzF-0Y-zsz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="bg"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WmE-o7-0My" secondAttribute="bottom" constant="20" id="5Ay-v9-H8X"/>
+                <constraint firstItem="o5h-88-B74" firstAttribute="top" secondItem="n7q-mi-jng" secondAttribute="bottom" constant="8" id="9TU-UR-thv"/>
+                <constraint firstItem="fkU-NL-rYZ" firstAttribute="top" secondItem="9zi-JD-skE" secondAttribute="bottom" constant="32" id="AVm-Yw-ZJ4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n7q-mi-jng" secondAttribute="trailing" constant="20" id="CBy-vl-UHe"/>
+                <constraint firstItem="9zi-JD-skE" firstAttribute="top" secondItem="dXe-wj-SjP" secondAttribute="bottom" constant="24" id="Lgj-QI-dm4"/>
+                <constraint firstItem="WmE-o7-0My" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="MAp-nv-OfW"/>
+                <constraint firstItem="RFN-8h-b1t" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PKC-J9-3jO"/>
+                <constraint firstItem="fkU-NL-rYZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="QtZ-zd-90Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9zi-JD-skE" secondAttribute="trailing" constant="25" id="TjN-Iv-5na"/>
+                <constraint firstItem="o5h-88-B74" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="VUD-Vn-aAx"/>
+                <constraint firstItem="9zi-JD-skE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="WQP-pF-uVJ"/>
+                <constraint firstItem="dXe-wj-SjP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="68" id="YEQ-Ht-axS"/>
+                <constraint firstItem="n7q-mi-jng" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZFw-kd-Uxv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o5h-88-B74" secondAttribute="trailing" constant="25" id="hQU-co-WwE"/>
+                <constraint firstAttribute="bottom" secondItem="RFN-8h-b1t" secondAttribute="bottom" id="ics-52-aaT"/>
+                <constraint firstItem="RFN-8h-b1t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ojg-6g-bkw"/>
+                <constraint firstItem="RFN-8h-b1t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sPz-nP-chm"/>
+                <constraint firstItem="n7q-mi-jng" firstAttribute="top" secondItem="fkU-NL-rYZ" secondAttribute="bottom" constant="24" id="spB-h0-baX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WmE-o7-0My" secondAttribute="trailing" constant="25" id="uq0-c0-WO6"/>
+                <constraint firstItem="dXe-wj-SjP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yn0-EL-kA5"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </view>
+        <tapGestureRecognizer id="MVn-OI-1TK">
+            <connections>
+                <action selector="termsTap:" destination="-1" id="oy7-e8-ilP"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_logo_square" width="64" height="64"/>
+        <image name="ic_logo_text" width="74" height="24"/>
+        <image name="ic_logo_tiktok" width="64" height="64"/>
+        <image name="ic_next" width="24" height="24"/>
+        <namedColor name="background">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="0.079999998211860657" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bg">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.99607843137254903" green="0.17254901960784313" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary_tapped">
+            <color red="0.81568627450980391" green="0.14901960784313725" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
